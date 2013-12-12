@@ -2807,7 +2807,7 @@ CBlock(hash=00000e5e37c42d6b67d0934399adfb0fa48b59138abb1a8842c88f4ca3d4ec96, ve
         if (fTestNet)
         {
             block.nTime    = 1386811998;
-            block.nNonce   = 121120130833;
+            block.nNonce   = 121120130;
         }
 
         //// debug print
