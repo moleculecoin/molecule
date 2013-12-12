@@ -2817,9 +2817,10 @@ CBlock(hash=00000e5e37c42d6b67d0934399adfb0fa48b59138abb1a8842c88f4ca3d4ec96, ve
             hash = block.GetHash();
         }
 
-        printf("%s\n", hash.ToString().c_str());
-        printf("%s\n", hashGenesisBlock.ToString().c_str());
-        printf("%s\n", block.hashMerkleRoot.ToString().c_str());
+        printf("%s\nHash:         ", hash.ToString().c_str());
+        printf("%s\nGenesis Hash: ", hashGenesisBlock.ToString().c_str());
+        printf("%s\nMerkle Root:  ", block.hashMerkleRoot.ToString().c_str());
+	printf("%s\n", "0x3bb9583f40c0993729bb480edcf4ea8ee7ac3eb9b64d03c8da46a48cc0325fd7");
         block.print();
         assert(block.hashMerkleRoot == uint256("0x3bb9583f40c0993729bb480edcf4ea8ee7ac3eb9b64d03c8da46a48cc0325fd7"));
         assert(hash == hashGenesisBlock);
