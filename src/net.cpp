@@ -1192,29 +1192,7 @@ void MapPort(bool)
 // The first name is used as information source for addrman.
 // The second name should resolve to a list of seed addresses.
 static const char *strMainNetDNSSeed[][2] = {
-    {"seed1.mol.cc", "seed1.mol.cc"},
-    {"seed2.mol.cc", "seed2.mol.cc"},
-    {"seed3.mol.cc", "seed3.mol.cc"},
-    {"seed4.mol.cc", "seed4.mol.cc"},
-    {"seed5.mol.cc", "seed5.mol.cc"},
-    {"seed6.mol.cc", "seed6.mol.cc"},
-    {"seed1.molcoin.org", "seed1.molcoin.org"},
-    {"seed2.molcoin.org", "seed2.molcoin.org"},
-    {"seed3.molcoin.org", "seed3.molcoin.org"},
-    {"seed4.molcoin.org", "seed4.molcoin.org"},
-    {"seed5.molcoin.org", "seed5.molcoin.org"},
-    {"seed6.molcoin.org", "seed6.molcoin.org"},
-    {"seed1.moleculeinvest.info", "seed1.moleculeinvest.info"},
-    {"seed2.moleculeinvest.info", "seed2.moleculeinvest.info"},
-    {"seed3.moleculeinvest.info", "seed3.moleculeinvest.info"},
-    {"seed4.moleculeinvest.info", "seed4.moleculeinvest.info"},
-    {"seed5.moleculeinvest.info", "seed5.moleculeinvest.info"},
-    {"seed6.moleculeinvest.info", "seed6.moleculeinvest.info"},
-    {"molecule.no-ip.biz", "molecule.no-ip.biz"},
-    {"molecule.mooo.com", "molecule.mooo.com"},
-    {"mol.ignorelist.com", "mol.ignorelist.com"},
-    {"mol.redirectme.net", "mol.redirectme.net"},
-    {"mol.no-ip.biz", "mol.no-ip.biz"},
+    {"seed.moleculecoin.com", "seed.moleculecoin.com"},
     {NULL, NULL}
 };
 

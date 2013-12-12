@@ -34,8 +34,8 @@ CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0x00000c257b93a36e9a4318a64398d661866341331a984e2b486414fc5bb16ccd");
-static const unsigned int timeGenesisBlock = 1386605547;
+uint256 hashGenesisBlock("0x000009a43ec76aae0d3a8035a9583cca6e524370a1478b5ca4346631389ca666");
+static const unsigned int timeGenesisBlock = 1373481000;
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20);
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -2802,7 +2802,7 @@ CBlock(hash=00000e5e37c42d6b67d0934399adfb0fa48b59138abb1a8842c88f4ca3d4ec96, ve
         block.nVersion = 112;
         block.nTime    = timeGenesisBlock;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-        block.nNonce   = 12058113;
+        block.nNonce   = 905523645;
 
         if (fTestNet)
         {
@@ -2821,7 +2821,7 @@ CBlock(hash=00000e5e37c42d6b67d0934399adfb0fa48b59138abb1a8842c88f4ca3d4ec96, ve
         printf("%s\n", hashGenesisBlock.ToString().c_str());
         printf("%s\n", block.hashMerkleRoot.ToString().c_str());
         block.print();
-        assert(block.hashMerkleRoot == uint256("0x868b2fb28cb1a0b881480cc85eb207e29e6ae75cdd6d26688ed34c2d2d23c776"));
+        assert(block.hashMerkleRoot == uint256("0x3bb9583f40c0993729bb480edcf4ea8ee7ac3eb9b64d03c8da46a48cc0325fd7"));
         assert(hash == hashGenesisBlock);
 
         // Start new block file
