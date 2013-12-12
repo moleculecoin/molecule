@@ -35,7 +35,7 @@ unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
 uint256 hashGenesisBlock("0x000009a43ec76aae0d3a8035a9583cca6e524370a1478b5ca4346631389ca666");
-static const unsigned int timeGenesisBlock = 1373481000;
+static const unsigned int timeGenesisBlock = 1386811998;
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20);
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -2802,12 +2802,12 @@ CBlock(hash=00000e5e37c42d6b67d0934399adfb0fa48b59138abb1a8842c88f4ca3d4ec96, ve
         block.nVersion = 112;
         block.nTime    = timeGenesisBlock;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-        block.nNonce   = 905523645;
+        block.nNonce   = 121120130832;
 
         if (fTestNet)
         {
-            block.nTime    = 1373481000;
-            block.nNonce   = 905523645;
+            block.nTime    = 1386811998;
+            block.nNonce   = 121120130833;
         }
 
         //// debug print
