@@ -55,20 +55,3 @@ script: |
   make $MAKEOPTS
   cp release/molecule-qt.exe $OUTDIR/
   #
-  cd src
-  export LD_PRELOAD=/usr/lib/faketime/libfaketime.so.1
-  export FAKETIME=$REFERENCE_DATETIME
-  export TZ=UTC
-  make -f makefile.linux-mingw $MAKEOPTS DEPSDIR=$HOME/build moleculed.exe USE_UPNP=0 DEBUGFLAGS="-frandom-seed=bitcoin"
-  i586-mingw32msvc-strip moleculed.exe
-  mkdir $OUTDIR/daemon
-  cp moleculed.exe $OUTDIR/daemon
-  cd ..
-  mkdir nsis
-  git archive HEAD | tar -x -C nsis
-  cd nsis/src
-  mkdir ../release
-  cp ../../release/* ../release/
-  cp ../../src/*.exe .
-  makensis ../share/setup.nsi
-  cp ../share/molecule-*-win32-setup.exe $OUTDIR/
