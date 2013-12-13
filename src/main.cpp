@@ -1077,7 +1077,7 @@ uint256 static GetOrphanRoot(const CBlockHeader* pblock)
 }
 
 static const int64 nGenesisBlockRewardCoin = 1 * COIN;
-static const int64 nBlockRewardStartCoin = 2048 * COIN;
+static const int64 nBlockRewardStartCoin = 784 * COIN;//2048 * COIN;
 static const int64 nBlockRewardMinimumCoin = 1 * COIN;
 
 static const int64 nTargetTimespan = 10 * 60; // 10 minutes
@@ -1093,8 +1093,8 @@ int64 static GetBlockValue(int nHeight, int64 nFees, unsigned int nBits)
     
     int64 nSubsidy = nBlockRewardStartCoin;
 
-    // Subsidy is cut in half every 2048 blocks (21 days)
-    nSubsidy >>= (nHeight / 2048);
+    // Subsidy is cut in half every 120960 blocks (42 days)
+    nSubsidy >>= (nHeight / 120960);
     
     // Minimum subsidy
     if (nSubsidy < nBlockRewardMinimumCoin)
