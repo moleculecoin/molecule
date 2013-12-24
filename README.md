@@ -1,4 +1,4 @@
-Molecule 0.8.6 BETA
+Molecule 0.8.11.1 BETA
 ====================
 
 Copyright (c) 2009-2013 Bitcoin Developers, Quarkcoin Developers
@@ -24,14 +24,3 @@ You need the Qt4 run-time libraries to run Molecule-Qt. On Debian or Ubuntu:
 	`sudo apt-get install libqtgui4`
 
 
-Other Pages
----------------------
-- [Unix Build Notes](build-unix.md)
-- [OSX Build Notes](build-osx.md)
-- [Windows Build Notes](build-msw.md)
-- [Coding Guidelines](coding.md)
-- [Release Process](release-process.md)
-- [Release Notes](release-notes.md)
-- [Multiwallet Qt Development](multiwallet-qt.md)
-- [Unit Tests](unit-tests.md)
-- [Translation Process](translation_process.md)
